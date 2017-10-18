@@ -30,7 +30,8 @@ public class WordAdapter extends ArrayAdapter<Word>  {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         View listItemView = convertView;
         if (listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
+            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item,
+                    parent, false);
         }
         Word currentWord = getItem(position);
 
